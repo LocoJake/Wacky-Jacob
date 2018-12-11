@@ -1,6 +1,7 @@
 var sq;
 var feed = [];
 var numFood = 10;
+var wingsOut = rotate(-Math.PI / 4);
 
 var a = [1, 2, 3];
 
@@ -22,7 +23,7 @@ function draw() {
     }
 }
 
-function mouseIsPressed() {
+function mousePressed() {
     sq.eat();
 }
 
@@ -61,6 +62,7 @@ function Penguin() {
             var r2 = diameter / 2;
             if(r1 + r2 > d) {
                 feed.splice(i, 1);
+                feed.push(new Food(random(width), random (height)));
             }
         }
     };
@@ -94,6 +96,7 @@ function Penguin() {
         fill('#000000');
         ellipse(x - 30, y - 50, 20, 20);
         if(mouseIsPressed) {
+            wingsOut = true;
             // leftArm;
             fill('#000000');
             push();
@@ -122,6 +125,7 @@ function Penguin() {
             translate(x + 50, y + 80);
             rotate(Math.PI / 4);
             ellipse(0, 0, 52, 92);
+            pop();
         }
             // leftFoot
             fill('#FFFF00');
