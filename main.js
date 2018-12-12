@@ -98,6 +98,7 @@ function Penguin() {
         ellipse(x - 30, y - 50, 40, 30);
         fill('#000000');
         ellipse(x - 30, y - 50, 20, 20);
+        // Wings Flap Out
         if(mouseIsPressed) {
             wingsOut = true;
             // leftArm;
@@ -114,6 +115,7 @@ function Penguin() {
             rotate(-Math.PI / 4);
             ellipse(0, 0, 52, 92);
             pop();
+        // Wings Flap In
         } else {
             // leftArm;
             fill('#000000');
