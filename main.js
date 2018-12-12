@@ -28,6 +28,7 @@ function mousePressed() {
     sq.eat();
 }
 
+// Food Display/Function
 function Food(x, y) {
     this.x = x;
     this.y = y;
