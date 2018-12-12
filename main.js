@@ -56,6 +56,7 @@ function Penguin() {
         wingsOut = !wingsOut;
     }
     
+    // Eat Function
     this.eat = function() {
         for(var i = 0; i < feed.length; i++) {
             var food = feed[i];
