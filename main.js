@@ -69,6 +69,7 @@ function Penguin() {
         }
     };
     
+    // Drawing of the Penguin
     this.display = function() {
         x = mouseX;
         y = mouseY;
