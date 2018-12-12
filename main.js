@@ -2,7 +2,7 @@ var sq;
 var feed = [];
 var numFood = 10;
 var wingsOut = rotate(-Math.PI / 4);
-//hi
+
 
 var a = [1, 2, 3];
 
@@ -40,6 +40,7 @@ function Food(x, y) {
     }
 }
 
+// Penguin Functionality
 function Penguin() {
     var x = mouseX;
     var y = mouseY;
