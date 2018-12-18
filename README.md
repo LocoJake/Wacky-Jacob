@@ -23,3 +23,5 @@ My P5 Project was a picture of a Penguin.
 The Penguin is meant to eat some fruit that appears on screen.
 
 Another thing that the Penguin does when you click is flap his wings.
+
+The last big thing the code does is keep remaking fruit when the Penguin eats one.
